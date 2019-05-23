@@ -1,0 +1,16 @@
+#cet exercice est realisé dans le cadre des cours de python du site developpez
+
+#le script trouve un entier corrrespondant au nombre max de divisions par deux, sans reste.
+print("Combien de division par 2")
+num = int(input("Entrez un entier positif :"))
+number = num
+
+while num < 1:
+    num = int(input("Entrez un entier positif !:"))
+
+i = 0
+while num%2 == 0:
+    num = num / 2
+    i += 1
+
+print(number, "est divisible ", i, "fois par 2")
