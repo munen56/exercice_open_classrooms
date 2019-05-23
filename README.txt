@@ -1,0 +1,1 @@
+Ce petit depot cree dans le cadre des cours d'open-classrooms ne contient rien de bien passionnant. Enfin bon, il faut bien commencer quelque part !
