@@ -35,15 +35,19 @@ class DictionnaireOrdonne():
     def __setitem__(self, saisi, valeur):
         """Cette méthode est appelée quand on écrit objet[index] = valeur"""
         print(saisi)
-        if self.key.count(saisi) == 0:
+        if saisi not in self.key:
             self.key.append(saisi)
+            index = self.key.index(saisi)
+            self.value.append(valeur)
 
-        index = self.key.index(saisi)
-        self.value[index] = valeur
+        else:
+            index = self.key.index(saisi)
+            self.value[index] = valeur
 
 
 fruits = DictionnaireOrdonne(dsfds = 34, fade = 34)
 fruits.data()
 print(fruits)
-fruits["fade"] = 36
+fruits["fader"] = 36
+
 print(fruits)
